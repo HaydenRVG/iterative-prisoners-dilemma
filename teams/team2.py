@@ -6,7 +6,7 @@ In this file, you MUST define the following:
 Variables:
   - team_name:            a string with your team's name
   - strategy_name:        a string with your team's strategy name
-  - strategy_description: a string with your team's strategy name
+  - strategy_description: a string with your team's strategy description
 
 Functions:
   - move(my_last_move, their_last_move):
@@ -27,7 +27,14 @@ def move(my_last_move, their_last_move):
         opponent made against you
     Returns 'c' or 'b' for collude or betray.
     '''
-    return 'c'
+    if my_last_move == 'c' and their_last_move == 'c':
+        return 'c'
+    elif my_last_move == 'c' and their_last_move == 'b':
+        return 'c'
+    elif my_last_move == 'b' and their_last_move == 'c':
+        return 'c'
+    else:
+        return 'b'
 
 if __name__ == '__main__':
   move()
