@@ -13,9 +13,9 @@ Functions:
     your team's implementation of your strategy (see move() docstring)
 '''
 
-team_name = 'TEAM 2'
-strategy_name = 'however you want to describe your strategy'
-strategy_description = 'How does this strategy decide?'
+team_name = 'TEAM 2 - Hayden, Aiden'
+strategy_name = 'forgiving t4t'
+strategy_description = 'If the opponent betrays 2 times in a row, the player will betray as well. Otherwise, it colludes'
 
 def move(my_last_move, their_last_move):
     '''
